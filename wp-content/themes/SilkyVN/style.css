@@ -1,0 +1,14 @@
+/* Theme Name : Sikly-theme
+Theme URL – Sikly.com
+Author – PhamTuanDuc
+Author URL – chua co
+Description – This part is an optional write-up on the theme that shows within the WordPress backend.
+Version – Start with 1.0.
+License
+License URL
+Tags : */
+
+@import url(assets/css/homepage.css);
+@import url(assets/css/about.css);
+@import url(assets/css/blog.css);
+@import url(assets/css/product.css);
