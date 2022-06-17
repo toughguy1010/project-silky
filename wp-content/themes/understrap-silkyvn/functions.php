@@ -29,6 +29,8 @@ $understrap_includes = array(
 	'/deprecated.php',                      // Load deprecated functions.
 );
 
+
+
 // Load WooCommerce functions if WooCommerce is activated.
 if ( class_exists( 'WooCommerce' ) ) {
 	$understrap_includes[] = '/woocommerce.php';
@@ -97,6 +99,55 @@ add_action('product_style','get_product_style');
 add_action('product_style','get_product_script');
 add_action('wp_head','get_header_script');
 add_action('blog-style','get_blog_script');
+// product title
+add_filter( 'silky_filter-product-title_name', 'product_title' );
+
+function product_title( $title ) {
+  return $title;
+}
+// product img
+
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+
+/**
+ * WooCommerce Loop Product Thumbs
+ **/
+
+ if ( ! function_exists( 'woocommerce_template_loop_product_thumbnail' ) ) {
+
+	function woocommerce_template_loop_product_thumbnail() {
+		echo woocommerce_get_product_thumbnail();
+	} 
+ }
+
+ function woocommerce_get_product_thumbnail( $size = 'woocommerce_thumbnail', $attr = array(), $placeholder = true ) {
+    global $product;
+
+   
+
+    if ( ! is_array( $attr ) ) {
+        $attr = array();
+    }
+
+    if ( ! is_bool( $placeholder ) ) {
+        $placeholder = true;
+    }
+
+    $attr['class'] = 'img-product-respon';
+    $image_size = apply_filters( 'single_product_archive_thumbnail_size', $size );
+    return $product ? $product->get_image( $image_size, $attr, $placeholder ) : '';
+}
+
+
+add_filter( 'woocommerce_get_availability', 'custom_override_get_availability', 10, 2);
+function custom_override_get_availability( $availability, $_product ) {
+   ?> <div class="condition-product"><?php
+if ( $_product->is_in_stock() ) $availability['availability'] = __('In stock', 'woocommerce');
+return $availability;
+?></div> <?php
+}
+
 
 // function render_product_link(){
 //     global $product;
@@ -107,3 +158,5 @@ add_action('blog-style','get_blog_script');
 // }
 
 // add_action( 'woocommerce_before_shop_loop_item', 'render_product_link', 10 );
+
+

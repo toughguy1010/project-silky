@@ -60,7 +60,7 @@ if ( woocommerce_product_loop() ) {
 	if ( wc_get_loop_prop( 'total' ) ) {
 		while ( have_posts() ) {
 			the_post();
-
+			//the_post_thumbnail('thumbnail', array('class' => 'your-class-name'));
 			/**
 			 * Hook: woocommerce_shop_loop.
 			 */

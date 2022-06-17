@@ -1163,8 +1163,7 @@ if ( ! function_exists( 'woocommerce_template_loop_product_title' ) ) {
 	 */
 	function woocommerce_template_loop_product_title() {
 	
-		echo '<div class="product-desc">
-		<div class="product-title ' . esc_attr( apply_filters( 'woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title' ) ) . '">' . get_the_title() . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo '<h2 class="product-title ' . esc_attr( apply_filters( 'woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title' ) ) . '">' . get_the_title() . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
 if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
@@ -1199,7 +1198,7 @@ if ( ! function_exists( 'woocommerce_template_loop_product_link_open' ) ) {
 
 		$link = apply_filters( 'woocommerce_loop_product_link', get_the_permalink(), $product );
 
-		echo '<a href="' . esc_url( $link ) . '" class="woocommerce-LoopProduct-link woocommerce-loop-product__link" >';
+		echo '<a href="' . esc_url( $link ) . '" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"  >';
 	}
 }
 
@@ -1421,7 +1420,6 @@ if ( ! function_exists( 'woocommerce_get_product_thumbnail' ) ) {
 		}
 
 		$image_size = apply_filters( 'single_product_archive_thumbnail_size', $size );
-
 		return $product ? $product->get_image( $image_size, $attr, $placeholder ) : '';
 	}
 }

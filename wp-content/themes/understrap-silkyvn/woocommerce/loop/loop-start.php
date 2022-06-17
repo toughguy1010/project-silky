@@ -1,8 +1,9 @@
 <?php
+
 /**
- * Product Loop End
+ * Product Loop Start
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/loop/loop-end.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/loop/loop-start.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -12,13 +13,15 @@
  *
  * @see         https://docs.woocommerce.com/document/template-structure/
  * @package     WooCommerce\Templates
- * @version     2.0.0
+ * @version     3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+do_action('product_style');	
 ?>
-</ul>
-
+<div class="wrapper-content">
+	<div class="product-menu">
+		<ul class=" columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?> menu-product-list">
 
