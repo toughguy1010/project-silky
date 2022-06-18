@@ -140,15 +140,6 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loo
 }
 
 
-add_filter( 'woocommerce_get_availability', 'custom_override_get_availability', 10, 2);
-function custom_override_get_availability( $availability, $_product ) {
-   ?> <div class="condition-product"><?php
-if ( $_product->is_in_stock() ) $availability['availability'] = __('In stock', 'woocommerce');
-return $availability;
-?></div> <?php
-}
-
-
 // function render_product_link(){
 //     global $product;
 
