@@ -18,6 +18,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
+echo "00000".$availability;
 ?>
 <p class="stock <?php echo esc_attr( $class ); ?>"><?php echo wp_kses_post( $availability ); ?> </p>
