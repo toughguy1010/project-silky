@@ -22,4 +22,3 @@ global $product;
 
 ?>
 
-<?php do_action( 'woocommerce_product_additional_information', $product ); ?>

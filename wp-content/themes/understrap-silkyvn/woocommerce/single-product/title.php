@@ -19,4 +19,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-the_title( '<h1 class="product_title entry-title"> dd', '</h1>' );
+the_title( '<div class="detail_product_title entry-title"> ', '</div>' );
+
+global $post;
+
+$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
+
+if ( ! $short_description ) {
+	return;
+}
+
+?>
+<div class="woocommerce-product-details__short-description">
+	<?php echo $short_description; // WPCS: XSS ok. ?>
+</div>
+

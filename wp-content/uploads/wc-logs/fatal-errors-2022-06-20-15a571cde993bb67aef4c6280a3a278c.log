@@ -142,3 +142,30 @@ Stack trace:
 #9 {main}
   thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
 
+2022-06-20T07:21:12+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::custom_add_to_cart_text() in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\single-product\add-to-cart\variation-add-to-cart-button.php:23
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3043): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(307): woocommerce_single_variation_add_to_cart_button('')
+#3 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\single-product\add-to-cart\variable.php(72): do_action('woocommerce_sin...')
+#6 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1730): wc_get_template('single-product/...', Array)
+#8 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(307): woocommerce_variable_add_to_cart('')
+#9 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#10 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#11 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1676): do_action('woocommerce_var...')
+#12 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(307): woocommerce_template_single_add_to_cart('')
+#13 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#14 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#15 C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php(72): do_action('woocommerce_aft...')
+#16 C:\xampp\htdocs\test02\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#18 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(38): wc_get_template_part('content', 'single-product')
+#19 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\single-product\add-to-cart\variation-add-to-cart-button.php on line 23
+

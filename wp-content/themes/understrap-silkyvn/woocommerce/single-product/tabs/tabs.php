@@ -32,7 +32,7 @@ if ( ! empty( $product_tabs ) ) : ?>
 
 	<div class="woocommerce-tabs wc-tabs-wrapper">
 		<?php foreach ( $product_tabs as $key => $product_tab ) : ?>
-			<div role="tabpanel" aria-labelledby="tab-title-">
+			<div class="desc_tabs" role="tabpanel" aria-labelledby="tab-title-">
 				<?php
 				if ( isset( $product_tab['callback'] ) ) {
 					call_user_func( $product_tab['callback'], $key, $product_tab );
@@ -40,8 +40,10 @@ if ( ! empty( $product_tabs ) ) : ?>
 				}
 				?>
 			</div>
+			
 		<?php endforeach; ?>
-
-	
-	
+		
+		</div>
+		</div>
+		</div>
 <?php endif; ?>

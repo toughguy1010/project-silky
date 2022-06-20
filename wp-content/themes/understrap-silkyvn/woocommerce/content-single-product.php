@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 // do_action('product_style');
-
+do_action('product_style');
 global $product;
 
 /**
