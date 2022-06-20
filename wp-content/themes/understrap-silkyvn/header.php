@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) || exit;
         <!-- Header start -->
         <div class="header-section">
             <nav class="navbar navbar-expand-lg ">
-                <div class="navbar-nav nav-list">
+                <!-- <div class="navbar-nav nav-list">
                     <div class="nav-item link-shop-item ">
                         <a class="nav-link active shop-link  " aria-current="page" href="#">Shop</a>
                         <div class="sub-shop-menu">
@@ -150,7 +150,21 @@ defined( 'ABSPATH' ) || exit;
                         <a class="nav-link active" aria-current="page" href="#">Liên hệ</a>
                     </div>
 
-                </div>
+                </div> -->
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location'  => 'primary',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id'    => 'navbarNavDropdown',
+                        'menu_class'      => 'navbar-nav ml-auto',
+                        'fallback_cb'     => '',
+                        'menu_id'         => 'main-menu',
+                        'depth'           => 2,
+                        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                    )
+		        );
+		        ?>
                 <div class="header-logo">
                 <img src="<?php echo get_template_directory_uri() . '/img/header-logo-img.jpg'; ?>" class="logo-respon" />
                     <!-- <img src="/assets/img/header-logo-img.jpg" alt="" class="logo-respon"> -->

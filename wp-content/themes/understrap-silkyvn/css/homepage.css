@@ -15,6 +15,21 @@
 }
 
 
+/* Header wp css */
+
+.collapse {
+    width: fit-content;
+    height: 100%;
+    display: block !important;
+    flex-grow: 0 !important;
+}
+
+.main-menu {
+    height: 100%;
+    align-items: center;
+}
+
+
 /* Header css */
 
 .header-section {
@@ -486,11 +501,11 @@
 
 .switch-english-btn {
     line-height: 20px;
-    margin-top: 1.5px;
+    /* margin-top: 1.5px; */
 }
 
 .switch-vietnamese-btn {
-    transform: translateX(100px);
+    transform: translateY(1px);
     transition: all 0.4s;
     /* display: none; */
     margin-left: 0.4%;
@@ -521,7 +536,7 @@
 }
 
 .switch-languae-btn:hover .switch-vietnamese-btn {
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
     /* display: block; */
 }

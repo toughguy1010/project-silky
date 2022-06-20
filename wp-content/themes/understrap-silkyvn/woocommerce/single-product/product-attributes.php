@@ -31,4 +31,4 @@ if ( ! $product_attributes ) {
 		</div>
 	<?php endforeach; ?>
 </table>
-</div>
+

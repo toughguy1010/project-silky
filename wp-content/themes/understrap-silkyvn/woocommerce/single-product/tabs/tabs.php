@@ -43,6 +43,5 @@ if ( ! empty( $product_tabs ) ) : ?>
 		<?php endforeach; ?>
 
 	
-	</div>
-
+	
 <?php endif; ?>

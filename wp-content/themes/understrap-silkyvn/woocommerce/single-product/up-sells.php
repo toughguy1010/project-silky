@@ -27,9 +27,9 @@ if ( $upsells ) : ?>
 
 		if ( $heading ) :
 			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
+			<h2 class="ms-5">Sản phẩm liên quan</h2>
 		<?php endif; ?>
-
+		
 		<?php woocommerce_product_loop_start(); ?>
 
 			<?php foreach ( $upsells as $upsell ) : ?>

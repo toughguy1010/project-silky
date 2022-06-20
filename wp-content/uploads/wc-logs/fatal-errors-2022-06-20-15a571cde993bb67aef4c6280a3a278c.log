@@ -1,0 +1,144 @@
+2022-06-20T02:07:56+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php on line 112
+
+2022-06-20T02:24:04+00:00 CRITICAL syntax error, unexpected token "if" in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\functions.php on line 118
+
+2022-06-20T02:24:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 0 passed in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\functions.php on line 112 and at least 2 expected in C:\xampp\htdocs\test02\wp-includes\plugin.php:571
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\functions.php(112): remove_action()
+#1 C:\xampp\htdocs\test02\wp-settings.php(566): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test02\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\test02\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\plugin.php on line 571
+
+2022-06-20T02:26:43+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\functions.php on line 157
+
+2022-06-20T03:16:51+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woo_remove_wc_breadcrumbs" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\test02\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\test02\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:16:59+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woo_remove_wc_breadcrumbs" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\test02\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\test02\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:17:24+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woo_remove_wc_breadcrumbs" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\test02\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\test02\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:17:31+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woo_remove_wc_breadcrumbs" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\test02\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\test02\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:18:07+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woo_remove_wc_breadcrumbs" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\test02\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\test02\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:18:17+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woo_remove_wc_breadcrumbs" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\test02\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\test02\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:29:34+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "wcc_change_breadcrumb_home_text" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#1 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2287): apply_filters('woocommerce_bre...', Array)
+#2 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(305): woocommerce_breadcrumb()
+#3 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(32): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:29:51+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "wcc_change_breadcrumb_home_text" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#1 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2287): apply_filters('woocommerce_bre...', Array)
+#2 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(305): woocommerce_breadcrumb()
+#3 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(32): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:29:54+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "wcc_change_breadcrumb_home_text" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#1 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2287): apply_filters('woocommerce_bre...', Array)
+#2 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(305): woocommerce_breadcrumb()
+#3 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(32): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-20T03:30:21+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "wcc_change_breadcrumb_home_text" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#1 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2287): apply_filters('woocommerce_bre...', Array)
+#2 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(305): woocommerce_breadcrumb()
+#3 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(32): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+

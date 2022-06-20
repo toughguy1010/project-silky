@@ -89,12 +89,16 @@ function get_product_script(){
     wp_register_script('product_script', THEME_URI. '/js/product.js' );
     wp_enqueue_script('product_script');
 }
+function get_detail_product_style(){
+    wp_register_style('detail_product_style', THEME_URI.'/css/detail-product.css');
+    wp_enqueue_style('detail_product_style');
+}
 // hook style
 add_action('homepage_style','get_homepage_sytle');
 add_action('about_style','get_about_style');
 add_action('blog-style','get_blog_style');
 add_action('product_style','get_product_style');
-
+add_action('detail_product_style','get_detail_product_style');
 // hook script
 add_action('product_style','get_product_script');
 add_action('wp_head','get_header_script');
@@ -109,6 +113,7 @@ function product_title( $title ) {
 
 remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
 add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+
 
 /**
  * WooCommerce Loop Product Thumbs
@@ -151,3 +156,14 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loo
 // add_action( 'woocommerce_before_shop_loop_item', 'render_product_link', 10 );
 
 
+// 
+remove_action('woocommerce_single_product_summary','woocommerce_template_single_add_to_cart',30);
+add_action('woocommerce_after_single_product_summary','woocommerce_template_single_add_to_cart',1 );
+remove_action( 'woocommerce_simple_add_to_cart', 'woocommerce_simple_add_to_cart', 20 );
+add_action( 'woocommerce_after_single_product_summary', 'woocommerce_simple_add_to_cart', 10 );
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_home_text' );
+function wcc_change_breadcrumb_home_text( $defaults ) {
+    // Change the breadcrumb home text from 'Home' to 'Apartment'
+	$defaults['home'] = 'Apartment';
+	return $defaults;
+}

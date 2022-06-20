@@ -128,6 +128,7 @@ add_action( 'woocommerce_product_thumbnails', 'woocommerce_show_product_thumbnai
  * @see woocommerce_output_related_products()
  */
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
@@ -173,7 +174,7 @@ add_action( 'woocommerce_review_comment_text', 'woocommerce_review_display_comme
  * @see woocommerce_single_variation_add_to_cart_button()
  */
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
-add_action( 'woocommerce_simple_add_to_cart', 'woocommerce_simple_add_to_cart', 30 );
+add_action( 'woocommerce_simple_add_to_cart', 'woocommerce_simple_add_to_cart', 20 );
 add_action( 'woocommerce_grouped_add_to_cart', 'woocommerce_grouped_add_to_cart', 30 );
 add_action( 'woocommerce_variable_add_to_cart', 'woocommerce_variable_add_to_cart', 30 );
 add_action( 'woocommerce_external_add_to_cart', 'woocommerce_external_add_to_cart', 30 );
