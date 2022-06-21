@@ -633,7 +633,7 @@
 .entry-summary {
     width: 100%;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 7%;
     position: relative;
 }
 
@@ -651,7 +651,7 @@
 
 .desc_tabs {
     font-size: 13px;
-    margin-top: 5%;
+    margin-top: 0%;
 }
 
 .price_detail_product::after {
@@ -709,6 +709,83 @@
 .wpgs-nav .slick-track {
     display: flex;
     flex-direction: column;
+}
+
+#right-sidebar {
+    display: none;
+}
+
+.variations {
+    width: 100%;
+    margin-top: 12%;
+}
+
+.variations_list {
+    height: 90px;
+    width: 100%;
+}
+
+.variations_label {
+    min-width: 40px;
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.variations_label span {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+
+.reset_variations {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.reset_variations:hover {
+    color: #9E8760;
+    font-weight: bold;
+}
+
+.variations_value ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+}
+
+.variable-item-contents {
+    width: 100%;
+}
+
+.value_button ul li {
+    margin-right: 5%;
+}
+
+.variable-item-span-button {
+    height: 40px;
+    display: block;
+    width: 42px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: rgb(0, 0, 0) 1px solid;
+    outline: #fffefc 2px solid;
+}
+
+.variable-item-span-button:hover {
+    height: 40px;
+    display: block;
+    width: 42px;
+    background-color: #9E8760;
+    color: #ffffff;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    border: rgb(255, 255, 255) 2px solid;
+    outline: #9E8760 2px solid;
 }
 
 
