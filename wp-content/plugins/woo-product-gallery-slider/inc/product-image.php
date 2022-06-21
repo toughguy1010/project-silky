@@ -54,7 +54,7 @@ do_action( 'wpgs_before_image_gallery' );
 		<?php
 
 if ( has_post_thumbnail() ) {
-	echo '<div class="wpgs-for  ">';
+	echo '<div class="wpgs-for">';
 	$attachment_ids = $product->get_gallery_image_ids();
 
 	$lightbox_src = wc_get_product_attachment_props( $post_thumbnail_id );
@@ -62,7 +62,7 @@ if ( has_post_thumbnail() ) {
 	$img_caption = ( empty( wp_get_attachment_caption( $post_thumbnail_id ) ) ) ? get_the_title( $post_thumbnail_id ) : wp_get_attachment_caption( $post_thumbnail_id );
 
 	if ( $gallery_options['lightbox_picker'] == '1' ) {
-		echo '<div class="woocommerce-product-gallery__image single-product-main-image main_detail_product_img "><a
+		echo '<div class="woocommerce-product-gallery__image single-product-main-image"><a
     data-caption="' . $img_caption . '"
     data-fancybox="wpgs-lightbox" href="' . $lightbox_src['url'] . '"
     data-mobile=["clickContent:close","clickSlide:close"]
@@ -76,7 +76,7 @@ if ( has_post_thumbnail() ) {
 		foreach ( $attachment_ids as $attachment_id ) {
 			$thumbnail_image = wp_get_attachment_image(
 				$attachment_id, $gallery_options['slider_image_size'], true, [
-					"class"         => "attachment-shop_single ",
+					"class"         => "attachment-shop_single",
 					"data-zoom_src" => wp_get_attachment_image_src( $attachment_id, apply_filters( 'gallery_slider_zoom_image_size', 'full' ) )[0],
 					'alt'           => trim( wp_strip_all_tags( get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ) ) ),
 				]
@@ -102,8 +102,8 @@ if ( has_post_thumbnail() ) {
 	}
 	echo "</div>";
 } else {
-	$html = '<div class="woocommerce-product-gallery__image--placeholder ">';
-	$html .= sprintf( '<img  src="%s" alt="%s" class="wp-post-image  " />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+	$html = '<div class="woocommerce-product-gallery__image--placeholder">';
+	$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
 	$html .= '</div>';
 }
 
