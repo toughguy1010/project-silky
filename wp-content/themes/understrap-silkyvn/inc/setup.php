@@ -72,6 +72,7 @@ if ( ! function_exists( 'understrap_setup' ) ) {
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+
 		/*
 		 * Adding support for Widget edit icons in customizer
 		 */
@@ -112,6 +113,12 @@ if ( ! function_exists( 'understrap_setup' ) ) {
 
 		// Check and setup theme default settings.
 		understrap_setup_theme_default_settings();
+		//
+		add_image_size('grid_post_thumbnail','370','216',true);
+		add_image_size('list_post_thumbnail','770','400',true);
+		add_image_size('single_post_thumbnail','800','430',true);
+		add_image_size('list_mini_thumbnail','80','80',true);
+		add_image_size('author_thumbnail','82','82',true);
 
 	}
 }

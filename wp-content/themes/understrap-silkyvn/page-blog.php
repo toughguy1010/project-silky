@@ -11,10 +11,22 @@ do_action('blog-style');
             </div>
             <div class="menu-content">
                 <ul class="menu-blog-list">
+                    <?php 
+                    // echo '<pre>';
+                    // var_dump($wp_query);
+                    // echo '</pre>';
+                    if (have_posts()) :
+                        while(have_posts()) :
+                            the_post();
+                    ?>
+                    <!-- post start -->
                     <li class="menu-item">
-                        <a href="#" class="blog-item">
+                        <a href="<?php the_permalink(); ?>" class="blog-item">
+                            <?php the_post_thumbnail('grid_post_thumbnail', array(
+                                'alt' => get_post_meta(get_post_thumbnail_id( get_the_ID()),
+                                '_wp_attachment_image_alt', true)
+                            )) ?>
                             <div class="blog-img">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/blog/blog-img-1.png'; ?>" class="blog-img-respon" />
 
                                 <!-- <img src="/assets/img/blog/blog-img-1.png" alt="" class="blog-img-respon"> -->
                             </div>
@@ -24,71 +36,11 @@ do_action('blog-style');
                                 gia hàng đầu tại Bảo Lộc - Lâm Đồng, người sáng lập Silky - cô Phạ</div>
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a href="#" class="blog-item">
-                            <div class="blog-img">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/blog/blog-img-2.png'; ?>" class="blog-img-respon" />
-
-                                <!-- <img src="/assets/img/blog/blog-img-2.png" alt="" class="blog-img-respon"> -->
-                            </div>
-                            <div class="blog-title">nghề trồng dâu nuôi tằm dệt lụa của việt nam</div>
-                            <div class="blog-line"></div>
-                            <div class="blog-desc">SilkyVietnam được hình thành từ gợi ý của một nhà văn hóa, họa sĩ, một học giả Việt Kiều Pháp về việc khôi phục nghề trồng dâu nuôi tằm dệt lụa của Việt Nam. Sau nhiều ngày nghiên cứu và sau chuyến tìm hiểu, gặp gỡ các chuyên
-                                gia hàng đầu tại Bảo Lộc - Lâm Đồng, người sáng lập Silky - cô Phạ</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="blog-item">
-                            <div class="blog-img">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/blog/blog-img-3.png'; ?>" class="blog-img-respon" />
-
-                                <!-- <img src="/assets/img/blog/blog-img-3.png" alt="" class="blog-img-respon"> -->
-                            </div>
-                            <div class="blog-title">nghề trồng dâu nuôi tằm dệt lụa của việt nam</div>
-                            <div class="blog-line"></div>
-                            <div class="blog-desc">SilkyVietnam được hình thành từ gợi ý của một nhà văn hóa, họa sĩ, một học giả Việt Kiều Pháp về việc khôi phục nghề trồng dâu nuôi tằm dệt lụa của Việt Nam. Sau nhiều ngày nghiên cứu và sau chuyến tìm hiểu, gặp gỡ các chuyên
-                                gia hàng đầu tại Bảo Lộc - Lâm Đồng, người sáng lập Silky - cô Phạ</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="blog-item">
-                            <div class="blog-img">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/blog/blog-img-4.png'; ?>" class="blog-img-respon" />
-
-                                <!-- <img src="/assets/img/blog/blog-img-4.png" alt="" class="blog-img-respon"> -->
-                            </div>
-                            <div class="blog-title">nghề trồng dâu nuôi tằm dệt lụa của việt nam</div>
-                            <div class="blog-line"></div>
-                            <div class="blog-desc">SilkyVietnam được hình thành từ gợi ý của một nhà văn hóa, họa sĩ, một học giả Việt Kiều Pháp về việc khôi phục nghề trồng dâu nuôi tằm dệt lụa của Việt Nam. Sau nhiều ngày nghiên cứu và sau chuyến tìm hiểu, gặp gỡ các chuyên
-                                gia hàng đầu tại Bảo Lộc - Lâm Đồng, người sáng lập Silky - cô Phạ</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="blog-item">
-                            <div class="blog-img">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/blog/blog-img-5.png'; ?>" class="blog-img-respon" />
-
-                                <!-- <img src="/assets/img/blog/blog-img-5.png" alt="" class="blog-img-respon"> -->
-                            </div>
-                            <div class="blog-title">nghề trồng dâu nuôi tằm dệt lụa của việt nam</div>
-                            <div class="blog-line"></div>
-                            <div class="blog-desc">SilkyVietnam được hình thành từ gợi ý của một nhà văn hóa, họa sĩ, một học giả Việt Kiều Pháp về việc khôi phục nghề trồng dâu nuôi tằm dệt lụa của Việt Nam. Sau nhiều ngày nghiên cứu và sau chuyến tìm hiểu, gặp gỡ các chuyên
-                                gia hàng đầu tại Bảo Lộc - Lâm Đồng, người sáng lập Silky - cô Phạ</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="blog-item">
-                            <div class="blog-img">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/blog/blog-img-6.png'; ?>" class="blog-img-respon" />
-                                
-                                <!-- <img src="/assets/img/blog/blog-img-6.png" alt="" class="blog-img-respon"> -->
-                            </div>
-                            <div class="blog-title">nghề trồng dâu nuôi tằm dệt lụa của việt nam</div>
-                            <div class="blog-line"></div>
-                            <div class="blog-desc">SilkyVietnam được hình thành từ gợi ý của một nhà văn hóa, họa sĩ, một học giả Việt Kiều Pháp về việc khôi phục nghề trồng dâu nuôi tằm dệt lụa của Việt Nam. Sau nhiều ngày nghiên cứu và sau chuyến tìm hiểu, gặp gỡ các chuyên
-                                gia hàng đầu tại Bảo Lộc - Lâm Đồng, người sáng lập Silky - cô Phạ</div>
-                        </a>
-                    </li>
+                    <!-- post end -->
+                   <?php
+                        endwhile;
+                    endif;
+                    ?>
                 </ul>
             </div>
             <div class="pagination">

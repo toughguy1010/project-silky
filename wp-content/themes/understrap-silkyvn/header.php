@@ -160,7 +160,7 @@ defined( 'ABSPATH' ) || exit;
                         'menu_class'      => 'navbar-nav ml-auto',
                         'fallback_cb'     => '',
                         'menu_id'         => 'main-menu',
-                        'depth'           => 2,
+                        'depth'           => 6,
                         'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                     )
 		        );
