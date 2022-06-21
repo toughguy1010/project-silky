@@ -626,14 +626,19 @@
 
 .detail_product_title {
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 1.4vw;
     display: block;
     font-family: 'Raleway', sans-serif;
 }
 
+.detail_sub_title p {
+    display: block;
+    font-size: 13px;
+}
+
 .entry-summary {
     width: 100%;
-    margin-left: 10%;
+    margin-left: 7%;
     margin-right: 7%;
     position: relative;
 }
@@ -653,7 +658,7 @@
 .desc_tabs {
     font-size: 13px;
     margin-top: 0%;
-    width: 90%;
+    width: 100%;
 }
 
 .price_detail_product::after {
@@ -673,9 +678,34 @@
 
 .single_variation_wrap {
     position: absolute;
-    bottom: 10%;
-    left: 20%;
-    margin-top: 100px;
+    bottom: 15%;
+    text-align: center;
+    left: 0%;
+    width: 100%;
+    height: 50px;
+}
+
+.variations_button {
+    height: 100%;
+}
+
+.detail_product_btn {
+    width: 50%;
+    background-color: #ffffff;
+    height: 100%;
+    border-radius: 25px;
+    border-width: 1.5px;
+    outline: 2px solid #FFFFFF;
+    text-transform: uppercase;
+    transition: all .2s;
+    font-size: 1vw;
+}
+
+.detail_product_btn:hover {
+    border: 1.5px solid #ffffff;
+    color: #ffffff;
+    background-color: #A48D67;
+    outline: 2px solid #A48D67;
 }
 
 .slick-track {
@@ -694,14 +724,14 @@
 }
 
 .wpgs-nav {
-    width: 70%;
+    width: 100%;
 }
 
 .wpgs-for {
     margin-left: 18px;
-    /* width: 100%; */
+    width: 100%;
     height: 760px;
-    width: 585px;
+    /* width: 585px; */
 }
 
 .wpgs-for img {
@@ -779,7 +809,7 @@
 .variable-item-span-button {
     height: 40px;
     display: block;
-    width: 42px;
+    width: 40px;
     line-height: 35px;
     text-align: center;
     border-radius: 50%;
@@ -789,9 +819,7 @@
 }
 
 .variable-item-span-button:hover {
-    height: 40px;
     display: block;
-    width: 42px;
     background-color: #9E8760;
     color: #ffffff;
     line-height: 35px;
@@ -800,6 +828,8 @@
     border: rgb(255, 255, 255) 2px solid;
     outline: #9E8760 2px solid;
 }
+
+.detail_product_btn {}
 
 
 /* .wp-post-image {
@@ -1015,4 +1045,18 @@
 
 .menu-product {
     list-style-type: none;
+}
+
+@media only screen and (max-width: 1205px) {
+    .desc_tabs p {
+        display: block;
+        display: -webkit-box;
+        height: 16px*1.3*3;
+        font-size: 16px;
+        line-height: 1.3;
+        -webkit-line-clamp: 3;
+        /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 }
