@@ -626,7 +626,8 @@
 
 .detail_product_title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 3vh;
+    display: block;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -652,6 +653,7 @@
 .desc_tabs {
     font-size: 13px;
     margin-top: 0%;
+    width: 90%;
 }
 
 .price_detail_product::after {
@@ -663,12 +665,6 @@
     left: 0;
     margin-top: 100px;
     bottom: 0;
-}
-
-.woocommerce-tabs {
-    display: flex;
-    margin-top: 10%;
-    flex-direction: column-reverse;
 }
 
 .woocommerce-product-attributes-item__label {
@@ -698,12 +694,28 @@
 }
 
 .wpgs-nav {
-    width: 100%;
+    width: 70%;
 }
 
 .wpgs-for {
     margin-left: 18px;
+    /* width: 100%; */
+    height: 760px;
+    width: 585px;
+}
+
+.wpgs-for img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.wpgs-for .slick-list,
+.wpgs-for .slick-track,
+.wpgs-for .woocommerce-product-gallery__image,
+.wpgs-for span,
+.wpgs-for img {
     width: 100%;
+    height: 100%;
 }
 
 .wpgs-nav .slick-track {
@@ -751,6 +763,7 @@
 .variations_value ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding-left: 0;
 }
@@ -760,7 +773,7 @@
 }
 
 .value_button ul li {
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 .variable-item-span-button {
@@ -814,6 +827,22 @@
 }
 
 .main_detail_product_img {}
+
+.up-sells .wrapper-content {
+    margin: 0%;
+}
+
+.up-sells {
+    margin-top: 6%;
+}
+
+.up-sells h3 {
+    display: block;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
 
 
 /* Detail-product css end */

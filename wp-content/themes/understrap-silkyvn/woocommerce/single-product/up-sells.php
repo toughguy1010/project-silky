@@ -27,7 +27,7 @@ if ( $upsells ) : ?>
 
 		if ( $heading ) :
 			?>
-			<h2 class="ms-5">Sản phẩm liên quan</h2>
+			<h3 class="">Sản phẩm liên quan</h3>
 		<?php endif; ?>
 		
 		<?php woocommerce_product_loop_start(); ?>

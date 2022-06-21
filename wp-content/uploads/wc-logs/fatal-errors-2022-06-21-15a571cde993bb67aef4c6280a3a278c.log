@@ -1,2 +1,4 @@
 2022-06-21T04:42:20+00:00 CRITICAL syntax error, unexpected token "." in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\single-product\add-to-cart\variable.php on line 28
 
+2022-06-21T06:36:04+00:00 CRITICAL Unclosed '{' on line 76 in C:\xampp\htdocs\test02\wp-content\plugins\woo-product-gallery-slider\inc\product-image.php on line 118
+

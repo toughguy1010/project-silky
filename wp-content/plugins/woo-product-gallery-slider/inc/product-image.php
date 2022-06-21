@@ -81,6 +81,7 @@ if ( has_post_thumbnail() ) {
 					'alt'           => trim( wp_strip_all_tags( get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ) ) ),
 				]
 			);
+		
 			$lightbox_src = wc_get_product_attachment_props( $attachment_id );
 
 			$img_caption = ( empty( wp_get_attachment_caption( $attachment_id ) ) ) ? get_the_title( $attachment_id ) : wp_get_attachment_caption( $attachment_id );
@@ -101,13 +102,14 @@ if ( has_post_thumbnail() ) {
 		}
 	}
 	echo "</div>";
+	
 } else {
 	$html = '<div class="woocommerce-product-gallery__image--placeholder">';
 	$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
 	$html .= '</div>';
-}
+};
+// apply_filters('woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id);
 
-//echo apply_filters('woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id);
 
 do_action( 'woocommerce_product_thumbnails' );
 
