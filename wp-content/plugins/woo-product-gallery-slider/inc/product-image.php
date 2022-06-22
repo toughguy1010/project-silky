@@ -49,12 +49,12 @@ do_action( 'wpgs_before_image_gallery' );
 
 ?>
 
-<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?> row" <?php echo esc_attr( $slider_rtl == 'true' ? 'dir=rtl' : '' ); ?> >
+<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?> " <?php echo esc_attr( $slider_rtl == 'true' ? 'dir=rtl' : '' ); ?> >
 
 		<?php
 
 if ( has_post_thumbnail() ) {
-	echo '<div class="wpgs-for col">';
+	echo '<div class="wpgs-for">';
 	$attachment_ids = $product->get_gallery_image_ids();
 
 	$lightbox_src = wc_get_product_attachment_props( $post_thumbnail_id );
