@@ -155,8 +155,12 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loo
 // }
 
 // add_action( 'woocommerce_before_shop_loop_item', 'render_product_link', 10 );
-
-
+require get_template_directory() . '/inc/ajax/zenzweb-ajax.php';
+// add_action('woocommerce_after_checkout_form', function() {
+add_action('woocommerce_checkout_before_order_review', function() {
+    get_template_part('global-templates/part','order-product-sumary');
+    echo '5555555555555555';
+    }, 99);
 // 
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_add_to_cart',30);
 add_action('woocommerce_after_single_product_summary','woocommerce_template_single_add_to_cart',1 );
