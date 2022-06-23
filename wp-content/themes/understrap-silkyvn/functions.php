@@ -77,6 +77,7 @@ function get_header_script(){
     wp_enqueue_script('header_script');
 }
 
+
 function get_blog_script(){
     wp_register_script('blog_script', THEME_URI. '/js/blog.js' );
     wp_enqueue_script('blog_script');

@@ -40,3 +40,5 @@ do_action('homepage_style');
         <!-- Content end-->
 <?php
 get_footer();
+
+?>

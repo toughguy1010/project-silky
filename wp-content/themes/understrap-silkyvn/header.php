@@ -191,7 +191,7 @@ defined( 'ABSPATH' ) || exit;
                         </div>
                     </div>
                     <div class="header-feature-list link-cart-item">
-                        <div class="header-feature-item cart-btn">
+                        <div id="cart-btn" class="header-feature-item cart-btn">
                             <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="11.984" height="13.973" viewBox="0 0 11.984 13.973">
                             <defs>
                               <style>

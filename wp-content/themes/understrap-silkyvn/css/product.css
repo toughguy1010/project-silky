@@ -715,7 +715,7 @@
 .wpgs {
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .type-product {
@@ -729,7 +729,7 @@
 
 .wpgs-for {
     margin-left: 18px;
-    /* width: 100%; */
+    width: 100%;
     height: 760px;
     width: 585px;
 }
@@ -737,6 +737,18 @@
 .wpgs-for img {
     object-position: center;
     object-fit: cover;
+}
+
+.pswp {
+    display: none;
+}
+
+.wpgs-nav .slick-current {
+    opacity: 1 !important;
+}
+
+.wc-forward {
+    display: flex;
 }
 
 .wpgs-for .slick-list,

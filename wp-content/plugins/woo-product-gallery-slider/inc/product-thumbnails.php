@@ -34,7 +34,7 @@ $gallery_thumbnail_size = $gallery_options['thumbnail_image_size'];
 if ( $attachment_ids && has_post_thumbnail() ) {
 	echo '<div class="wpgs-nav ">';
 	$image = wp_get_attachment_image( $post_thumbnail_id, $gallery_thumbnail_size, true, [
-		"class" => "wpgs-thumb-main-image",
+		"class" => "wpgs-thumb-main-image ",
 		'alt'   => trim( wp_strip_all_tags( get_post_meta( $post_thumbnail_id, '_wp_attachment_image_alt', true ) ) ),
 	] );
 	echo '<div>' . $image . '</div>';

@@ -480,7 +480,7 @@
 } */
 
 .cart-menu-open {
-    transform: translate(0px);
+    right: 0;
 }
 
 .cart-menu-close {
