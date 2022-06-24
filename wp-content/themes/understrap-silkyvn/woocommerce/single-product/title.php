@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-the_title( '<div class="detail_product_title entry-title"> ', '</div>' );
+the_title( '<div class="detail_product_title "> ', '</div>' );
 
 global $post;
 

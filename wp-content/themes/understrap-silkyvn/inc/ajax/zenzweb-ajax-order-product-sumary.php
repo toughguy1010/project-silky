@@ -48,7 +48,7 @@ function zenzweb_ajax_zwc_order_product_sumary(){
           </div>
         </div>
       <?php endif; ?>
-      <div class="cart-items item">
+      <div class="cart-items item totals-cart-item">
         <div class="coll-left">
           <span>
            <?php
@@ -62,7 +62,7 @@ function zenzweb_ajax_zwc_order_product_sumary(){
           ?>
         </div>
       </div>
-      <div class="cart-shipping item">
+      <div class="cart-shipping item cart-shipping-method">
         <div class="coll-left">
       	<span>
       	 Shipping Cost
@@ -101,7 +101,7 @@ function zenzweb_ajax_zwc_order_product_sumary(){
           </ul>
         </div>
       </div>
-      <div class="cart-total item">
+      <div class="cart-total total-cart-price item">
         <div class="coll-left">
           <span>
            Total
@@ -117,45 +117,41 @@ function zenzweb_ajax_zwc_order_product_sumary(){
       </div>
     </div>
   </div>
-
+  <div class="checkout-line"></div>
   <div class="top">
-    <div class="listing-cart">
+    <div class="listing-cart ">
     <?php
     foreach($items as $item => $values) {
       $_product =  wc_get_product( $values['data']->get_id() );
       ?>
-      <div class="item">
-
-        <div class="thumbnail">
-          <img src="<?php echo wp_get_attachment_image_url($_product->get_image_id(),'sp-chkout-img'); ?>" alt="">
-        </div>
-
+      <div class="item checkout_product_item">
         <div class="wrap-item-detail">
-
           <div class="wrap-title">
-            <div class="title">
+            <div class="title checkout_product_title">
               <a href="<?php echo esc_url( get_permalink( $_product->get_parent_id() ) ); ?>"><?php echo "<b>".$_product->get_title() .'</b>'; ?></a>
             </div>
-            <span class="delete" data-itemkey="<?php echo $item; ?>"><img src="<?php echo get_template_directory_uri().'/assets/del-b.svg' ?>" /></span>
+              <p>Light Cotton Canvas</p>
           </div>
-
           <div class="wrap-attr">
             <div class="left">
-              <div class="attr">
+              <div class="attr checkout_attr">
                 <?php
                 foreach ($_product->get_attributes() as $slug => $attr_val) {
                   $term = get_term_by('slug', $attr_val, $slug);
                   $temp = wc_attribute_label($slug).': '.$term->name;
                   ?>
-                  <div class="attr-item">
-                    <?php echo $temp; ?>
+                  <div class="attr-item ">
+                    <?php
+                     echo $temp; 
+                    
+                     ?>
                   </div>
                   <?php
                 }
                 ?>
               </div>
               <div class="quantity">
-                  Qty: <?php echo ' '.$values['quantity']; ?>
+              Quality: <?php echo ' '.$values['quantity']; ?>
               </div>
             </div>
             <div class="right">
@@ -164,9 +160,15 @@ function zenzweb_ajax_zwc_order_product_sumary(){
                   echo wc_price($_product->get_price() * $values['quantity']);
                 ?>
               </div>
+              <span class="delete delete-checkout-icon" data-itemkey="<?php echo $item; ?>"><img src="<?php echo get_template_directory_uri().'/assets/del-b2.svg' ?>" /></span>
             </div>
           </div>
         </div>
+        
+        <div class="thumbnail checkout_product_thumbnail">
+          <img src="<?php echo wp_get_attachment_image_url($_product->get_image_id(),'sp-chkout-img'); ?>" alt="">
+        </div>
+
       </div>
       <?php
       }

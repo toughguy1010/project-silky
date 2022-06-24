@@ -159,7 +159,6 @@ require get_template_directory() . '/inc/ajax/zenzweb-ajax.php';
 // add_action('woocommerce_after_checkout_form', function() {
 add_action('woocommerce_checkout_before_order_review', function() {
     get_template_part('global-templates/part','order-product-sumary');
-    echo '5555555555555555';
     }, 99);
 // 
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_add_to_cart',30);
