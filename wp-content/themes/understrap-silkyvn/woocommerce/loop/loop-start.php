@@ -22,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action('product_style');	
 ?>
 <div class="wrapper-content">
+
 	<div class="product-menu">
 		<ul class=" columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?> menu-product-list">
 

@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
-class Wcb_WooCommerce_Breadcrumbs_plugin {
+class Wcb_WooCommerce_Breadcrumbs_plugin{
 
 	private $options;
 	private $breadcrumb_defaults;

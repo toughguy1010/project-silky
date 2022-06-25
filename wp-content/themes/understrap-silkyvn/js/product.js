@@ -8,3 +8,15 @@ for (var paginationBtn = 0; paginationBtn < activeBtnPaginations.length; paginat
         this.className += "active-pagination"
     })
 }
+
+var activeButtonSizes = document.querySelectorAll('.variable-item-span-button')
+console.log(activeButtonSizes)
+
+for (let buttonSize = 0; buttonSize < activeButtonSizes.length; buttonSize++) {
+    activeButtonSizes[buttonSize].addEventListener('click', function() {
+        for (let i = 0; i < activeButtonSizes.length; i++) {
+            activeButtonSizes[i].classList.remove("variable-item-span-button-active")
+        }
+        this.classList.add("variable-item-span-button-active")
+    })
+}

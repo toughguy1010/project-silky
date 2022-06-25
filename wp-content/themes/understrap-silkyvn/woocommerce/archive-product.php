@@ -16,8 +16,8 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-
 get_header();
+
 do_action('product_style');	
 
 /**
@@ -40,11 +40,13 @@ do_action('product_style');
 	 * @hooked woocommerce_product_archive_description - 10
 	 */
 	do_action( 'woocommerce_archive_description' );
+	
 	?>
-
 <?php
 if ( woocommerce_product_loop() ) {
-
+	echo '<div class ="shop_breadcrumb"> ';
+	do_action('head');
+	echo '</div>';
 	/**
 	 * Hook: woocommerce_before_shop_loop.
 	 *
@@ -56,7 +58,7 @@ if ( woocommerce_product_loop() ) {
 
 	
 	woocommerce_product_loop_start();	
-
+	
 	if ( wc_get_loop_prop( 'total' ) ) {
 		while ( have_posts() ) {
 			the_post();
