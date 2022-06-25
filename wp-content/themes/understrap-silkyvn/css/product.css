@@ -766,7 +766,7 @@
 .wpgs {
     display: flex;
     flex-direction: row-reverse;
-    width: 50%;
+    /* width: 50%; */
     justify-content: start;
 }
 
@@ -786,7 +786,7 @@
 .wpgs-for {
     margin-left: 18px;
     height: 100vh;
-    width: 80%;
+    width: 100%;
 }
 
 .wpgs-for img {
