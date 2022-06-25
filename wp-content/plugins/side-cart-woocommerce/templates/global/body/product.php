@@ -25,20 +25,9 @@ $productClasses = apply_filters( 'xoo_wsc_product_class', $productClasses );
 
 	<?php do_action( 'xoo_wsc_product_start', $_product, $cart_item_key ); ?>
 
-	<?php if( $showPimage ): ?>
-
-		<div class="xoo-wsc-img-col">
-
-			<?php echo $thumbnail; ?>
-
-			<?php do_action( 'xoo_wsc_product_image_col', $_product, $cart_item_key ); ?>
-
-		</div>
-
-	<?php endif; ?>
+	
 
 	<div class="xoo-wsc-sum-col">
-
 		<?php do_action( 'xoo_wsc_product_summary_col_start', $_product, $cart_item_key ); ?>
 		<div class="xoo-wsc-sm-info">
 			
@@ -65,29 +54,24 @@ $productClasses = apply_filters( 'xoo_wsc_product_class', $productClasses );
 					<?php if( $showPprice && $qtyPriceDisplay === 'one_liner' ): ?>
 						<span>Quantity: <?php echo $cart_item['quantity']; ?></span>
 						<?php if( $showPtotal ): ?>
-							<span>  <?php echo $product_subtotal ?></span>
+							<span class="detail-cart-product-price">  <?php echo $product_subtotal ?></span>
 						<?php endif; ?>
 
 					<?php else: ?>
-						<span><?php _e( 'Qty:', 'side-cart-woocommerce' ) ?></span> <span><?php echo $cart_item['quantity']; ?></span>
+						<span class=""><?php _e( 'Qty:', 'side-cart-woocommerce' ) ?></span> <span><?php echo $cart_item['quantity']; ?></span>
 					<?php endif;
 					 ?>
-					
-					
-
 				</div>
-
+				<?php if( $showPdel ): ?>
+					<span class="xoo-wsc-smr-del <?php echo $delete_icon ?>"></span>
+				<?php endif; ?>
 			</div>
 
 			<!-- End Quantity -->
 
-		
-
 			<div class="xoo-wsc-sm-right">
 
-				<?php if( $showPdel ): ?>
-					<span class="xoo-wsc-smr-del <?php echo $delete_icon ?>"></span>
-				<?php endif; ?>
+				
 
 				<?php if( $showPtotal && ( $qtyPriceDisplay === 'separate' ) ): ?>
 					<span class="xoo-wsc-smr-ptotal"><?php echo $product_subtotal ?></span>
@@ -100,6 +84,17 @@ $productClasses = apply_filters( 'xoo_wsc_product_class', $productClasses );
 		<?php do_action( 'xoo_wsc_product_summary_col_end', $_product, $cart_item_key ); ?>
 
 	</div>
+	<?php if( $showPimage ): ?>
+
+<div class="xoo-wsc-img-col">
+
+	<?php echo $thumbnail; ?>
+
+	<?php do_action( 'xoo_wsc_product_image_col', $_product, $cart_item_key ); ?>
+
+</div>
+
+<?php endif; ?>
 
 	<?php do_action( 'xoo_wsc_product_end', $_product, $cart_item_key ); ?>
 

@@ -24,9 +24,12 @@ extract( Xoo_Wsc_Template_Args::footer_totals() );
 <?php if( WC()->cart->is_empty() ) return; ?>
 
 <div class="xoo-wsc-ft-totals">
+	
 	<?php foreach( $totals as $key => $data ): ?>
-		<div class="xoo-wsc-ft-amt xoo-wsc-ft-amt-<?php echo $key; ?> <?php echo isset( $data['action'] ) ? $data['action'] : '' ?>">
-			<span class="xoo-wsc-ft-amt-value"><?php echo $data['value'] ?></span>
+		<div class="total-price-title">To be calculated in checkout</div>
+		<div class="total-price-content xoo-wsc-ft-amt xoo-wsc-ft-amt-<?php echo $key; ?> <?php echo isset( $data['action'] ) ? $data['action'] : '' ?>">
+			<span class="label-total-price">Total</span>
+			<span class="xoo-wsc-ft-amt-value value-total-price"><?php echo $data['value'] ?></span>
 		</div>
 	<?php endforeach; ?>
 
