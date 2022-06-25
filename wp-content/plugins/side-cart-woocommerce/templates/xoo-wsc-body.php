@@ -103,9 +103,10 @@ extract( Xoo_Wsc_Template_Args::cart_body() );
 			'product_price' 	=> $product_price,
 			'product_subtotal' 	=> $product_subtotal,
 			'thumbnail' 		=> $thumbnail,
-			'bundleData' 		=> $bundleData
+			'bundleData' 		=> $bundleData,
+			
 		);
-
+	
 		$args = Xoo_Wsc_Template_Args::product( $_product, $cart_item, $cart_item_key, $cart_item_args );
 
 		xoo_wsc_helper()->get_template(
@@ -116,7 +117,7 @@ extract( Xoo_Wsc_Template_Args::cart_body() );
 	}
 
 ?>
-
+			
 </div>
 
 <?php do_action( 'xoo_wsc_after_products' ); ?>	

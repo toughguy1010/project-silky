@@ -40,36 +40,40 @@ $productClasses = apply_filters( 'xoo_wsc_product_class', $productClasses );
 	<div class="xoo-wsc-sum-col">
 
 		<?php do_action( 'xoo_wsc_product_summary_col_start', $_product, $cart_item_key ); ?>
-
 		<div class="xoo-wsc-sm-info">
-
+			
 			<div class="xoo-wsc-sm-left">
-
+				
 				<?php if( $showPname ): ?>
 					<span class="xoo-wsc-pname"><?php echo $product_name; ?></span>
-				<?php endif; ?>
-				
-				<?php if( $showPmeta ) echo $product_meta ?>
-
-				<?php if( $showPprice && ( $qtyPriceDisplay === 'separate' ) ): ?>
-					<div class="xoo-wsc-pprice">
-						<?php echo __( 'Price: ', 'side-cart-woocommerce' ) . $product_price ?>
-					</div>
-				<?php endif; ?>
+					<?php endif; ?>
+					
+					<?php if( $showPmeta ) echo $product_meta ?>
+					
+					<?php if( $showPprice && ( $qtyPriceDisplay === 'separate' ) ): ?>
+						<div class="xoo-wsc-pprice">
+							<?php echo __( 'Price: ', 'side-cart-woocommerce' ) . $product_price 
+							?>
+						</div>
+						<?php endif; ?>
+						
 
 				<!-- Quantity -->
 
 				<div class="xoo-wsc-qty-price">
 
 					<?php if( $showPprice && $qtyPriceDisplay === 'one_liner' ): ?>
-						<span><?php echo $cart_item['quantity']; ?></span> X <span><?php echo $product_price; ?></span>
+						<span>Quantity: <?php echo $cart_item['quantity']; ?></span>
 						<?php if( $showPtotal ): ?>
-							<span> = <?php echo $product_subtotal ?></span>
+							<span>  <?php echo $product_subtotal ?></span>
 						<?php endif; ?>
 
 					<?php else: ?>
 						<span><?php _e( 'Qty:', 'side-cart-woocommerce' ) ?></span> <span><?php echo $cart_item['quantity']; ?></span>
-					<?php endif; ?>
+					<?php endif;
+					 ?>
+					
+					
 
 				</div>
 

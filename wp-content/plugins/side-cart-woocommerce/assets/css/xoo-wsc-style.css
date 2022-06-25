@@ -54,7 +54,7 @@ html.xoo-wsc-cart-active {
 }
 
 .xoo-wsc-basket {
-    padding: 10px 12px;
+    padding: 9px 15px;
     margin: 10px;
     z-index: 9999999;
     cursor: pointer;
@@ -268,7 +268,7 @@ span.xoo-wsch-text {
 }
 
 .xoo-wsc-qty-price {
-    display: none;
+    /* display: none; */
 }
 
 .xoo-wsc-sm-right {
