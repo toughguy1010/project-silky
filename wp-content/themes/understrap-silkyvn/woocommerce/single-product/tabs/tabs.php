@@ -42,7 +42,7 @@ if ( ! empty( $product_tabs ) ) : ?>
 			</div>
 			
 		<?php endforeach; ?>
-		
+	
 		</div>
 		</div>
 		</div>

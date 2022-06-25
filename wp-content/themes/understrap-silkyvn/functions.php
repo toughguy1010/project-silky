@@ -173,4 +173,9 @@ function wcc_change_breadcrumb_home_text( $defaults ) {
 	$defaults['home'] = 'Apartment';
 	return $defaults;
 }
-
+// remove_action( 'woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
+// add_action('output_btn', 'woocommerce_single_variation_add_to_cart_button',1);
+// 	function woocommerce_single_variation_add_to_cart_button() {
+// 		wc_get_template( 'single-product/add-to-cart/variation-add-to-cart-button.php' );
+// 	}; 
+	

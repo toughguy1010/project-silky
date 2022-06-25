@@ -51,3 +51,61 @@ Stack trace:
 #22 {main}
   thrown in C:\xampp\htdocs\test02\wp-content\plugins\side-cart-woocommerce\templates\global\body\product.php on line 76
 
+2022-06-25T11:30:25+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woocommerce_before_add_to_cart_button" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php(72): do_action('woocommerce_aft...')
+#3 C:\xampp\htdocs\test02\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#5 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(38): wc_get_template_part('content', 'single-product')
+#6 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-25T11:31:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php on line 73 and at least 2 expected in C:\xampp\htdocs\test02\wp-includes\plugin.php:400
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php(73): add_action('woocommerce_bef...')
+#1 C:\xampp\htdocs\test02\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#3 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(38): wc_get_template_part('content', 'single-product')
+#4 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\plugin.php on line 400
+
+2022-06-25T11:41:56+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woocommerce_before_add_to_cart_button" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php(72): do_action('woocommerce_aft...')
+#3 C:\xampp\htdocs\test02\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#5 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(38): wc_get_template_part('content', 'single-product')
+#6 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-25T11:45:22+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "woocommerce_before_add_to_cart_button" not found or invalid function name in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\test02\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php(72): do_action('woocommerce_aft...')
+#3 C:\xampp\htdocs\test02\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#5 C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\templates\single-product.php(38): wc_get_template_part('content', 'single-product')
+#6 C:\xampp\htdocs\test02\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\test02\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\test02\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\test02\wp-includes\class-wp-hook.php on line 307
+
+2022-06-25T11:52:53+00:00 CRITICAL Cannot redeclare output_btn() (previously declared in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\functions.php:178) in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php on line 74
+
+2022-06-25T12:01:57+00:00 CRITICAL Cannot redeclare woocommerce_single_variation_add_to_cart_button() (previously declared in C:\xampp\htdocs\test02\wp-content\plugins\woocommerce\includes\wc-template-functions.php:3043) in C:\xampp\htdocs\test02\wp-content\themes\understrap-silkyvn\woocommerce\content-single-product.php on line 76
+
