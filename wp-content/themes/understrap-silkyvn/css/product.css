@@ -766,7 +766,7 @@
 .wpgs {
     display: flex;
     flex-direction: row-reverse;
-    /* width: 50%; */
+    width: 50%;
     justify-content: start;
 }
 
@@ -786,7 +786,7 @@
 .wpgs-for {
     margin-left: 18px;
     height: 100vh;
-    width: 100%;
+    width: 80%;
 }
 
 .wpgs-for img {
@@ -816,7 +816,11 @@
 }
 
 .wpgs-for .slick-track {
-    width: 2952px !important;
+    width: 3230px !important;
+}
+
+.fancybox-caption__body {
+    display: none;
 }
 
 .wpgs-nav .slick-track {
@@ -1121,7 +1125,7 @@
 
 /* cart start */
 
-.woocommerce-notices-wrapper {
+.woocommerce-message {
     display: none !important;
 }
 
