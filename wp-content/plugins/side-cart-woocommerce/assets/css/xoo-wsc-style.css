@@ -744,6 +744,10 @@ span.xoo-wsc-ftx-icon {
     /* padding-top: 10% !important; */
 }
 
+.total-price-title {
+    text-align: end;
+}
+
 a.xoo-wsc-ft-btn {
     display: flex;
     background-color: #fff;

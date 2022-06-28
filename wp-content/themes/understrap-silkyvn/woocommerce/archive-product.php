@@ -44,8 +44,10 @@ do_action('product_style');
 	?>
 <?php
 if ( woocommerce_product_loop() ) {
+	
 	echo '<div class ="shop_breadcrumb"> ';
 	do_action('head');
+	echo '</div>';
 	echo '</div>';
 	/**
 	 * Hook: woocommerce_before_shop_loop.

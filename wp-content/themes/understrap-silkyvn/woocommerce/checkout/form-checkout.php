@@ -46,7 +46,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 				<!-- form coupon -->
 				<form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:block">
-
+					<div class="coupon_checkout">
 					<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', 'woocommerce' ); ?></p>
 
 					<p class="form-row form-row-first">
@@ -56,6 +56,8 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					<p class="form-row form-row-last">
 						<button type="submit" class="btn btn-outline-primary" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_html_e( 'Apply coupon', 'woocommerce' ); ?></button>
 					</p>
+					</div>
+				</form>
 					<div class="woocommerce-additional-fields">
 						<?php do_action( 'woocommerce_before_order_notes', $checkout ); ?>
 
@@ -79,7 +81,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					</div>
 
 					<div class="clear"></div>
-				</form>
+				
 			</div>
 
 			<div class="col-12 col-sm-5">

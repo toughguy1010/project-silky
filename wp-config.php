@@ -20,10 +20,10 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'silkyvietnam' );
+define( 'DB_NAME', 'wpsilkyvietnam' );
 
 /** Database username */
-define( 'DB_USER', 'silkyvietnam' );
+define( 'DB_USER', 'wpsilkyvietnam' );
 
 /** Database password */
 define( 'DB_PASSWORD', '123456' );

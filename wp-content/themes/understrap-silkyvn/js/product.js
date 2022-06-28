@@ -20,3 +20,13 @@ for (let buttonSize = 0; buttonSize < activeButtonSizes.length; buttonSize++) {
         this.classList.add("variable-item-span-button-active")
     })
 }
+
+var activeShippingButtton = document.querySelector('#ship-to-different-address-checkbox')
+
+var shippingContainer = document.querySelector('.shipping_address')
+console.log(shippingContainer)
+activeShippingButtton.addEventListener('click', openShippingContainer)
+
+function openShippingContainer() {
+    shippingContainer.classList.toggle("active_shipping_address")
+}

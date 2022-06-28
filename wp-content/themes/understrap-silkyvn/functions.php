@@ -178,4 +178,50 @@ function wcc_change_breadcrumb_home_text( $defaults ) {
 // 	function woocommerce_single_variation_add_to_cart_button() {
 // 		wc_get_template( 'single-product/add-to-cart/variation-add-to-cart-button.php' );
 // 	}; 
-	
+
+
+// add_action( 'woocommerce_before_shop_loop_item_title', 'add_on_hover_shop_loop_image' ) ; 
+// // end if
+// function add_on_hover_shop_loop_image() {
+
+//     $gallery_image_ids = wc_get_product()->get_gallery_image_ids();
+//     if ($gallery_image_ids) {
+//         $image_id = $gallery_image_ids[0] ; 
+
+//         if ( $image_id ) {
+
+//             echo wp_get_attachment_image( $image_id ) ;
+
+//         } else {  //assuming not all products have galleries set
+
+//             echo wp_get_attachment_image( wc_get_product()->get_image_id() ) ; 
+
+//         }
+//     }
+    
+
+// }        
+
+//   add_shortcode('woof', array($this, 'woof_shortcode'));
+//   if (get_option('woof_try_ajax', 0) AND!isset($_REQUEST['woof_products_doing'])AND!$is_wc_shortcode) {
+//     echo '<div class="woocommerce woocommerce-page woof_shortcode_output">';
+//     $shortcode_txt = "woof_products is_ajax=1";
+//     if ($this->is_really_current_term_exists()) {
+//         $o = $this->get_really_current_term();
+//         $shortcode_txt = "woof_products taxonomies={$o->taxonomy}:{$o->term_id} is_ajax=1 predict_ids_and_continue=1";
+//         $_REQUEST['WOOF_IS_TAX_PAGE'] = $o->taxonomy;
+//     }
+//     echo '<div id="woof_results_by_ajax" data-shortcode="' . $shortcode_txt . '">';
+// }
+function wp_shortcode( $atts ) {
+    var_dump("1111111111");
+    extract( shortcode_atts( array(
+        'foo' => 'something',
+        'bar' => 'something else',
+    ), $atts ) );
+
+
+    return "foo = {$foo}";
+    // return your_function();
+}
+add_shortcode( 'your-shortcode', 'wp_shortcode' );
