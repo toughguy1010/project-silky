@@ -36,7 +36,9 @@ $productClasses = apply_filters( 'xoo_wsc_product_class', $productClasses );
 				<?php if( $showPname ): ?>
 					<span class="xoo-wsc-pname"><?php echo $product_name; ?></span>
 					<?php endif; ?>
-					
+					<?php if( $showPdel ): ?>
+					<span class="xoo-wsc-smr-del <?php echo $delete_icon ?>"></span>
+				<?php endif; ?>
 					<?php if( $showPmeta ) echo $product_meta ?>
 					
 					<?php if( $showPprice && ( $qtyPriceDisplay === 'separate' ) ): ?>
@@ -62,9 +64,7 @@ $productClasses = apply_filters( 'xoo_wsc_product_class', $productClasses );
 					<?php endif;
 					 ?>
 				</div>
-				<?php if( $showPdel ): ?>
-					<span class="xoo-wsc-smr-del <?php echo $delete_icon ?>"></span>
-				<?php endif; ?>
+				
 			</div>
 
 			<!-- End Quantity -->

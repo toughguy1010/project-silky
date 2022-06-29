@@ -1,8 +1,4 @@
-
-<?php
- echo '<div class = "shopnavbar">';
-if (!defined('ABSPATH')) die('No direct access allowed'); 
-?>
+<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
 
 <?php
 //+++
@@ -160,12 +156,12 @@ if (!function_exists('woof_print_tax')) {
         $args['additional_taxes'] = $additional_taxes;
 
         //***
-        // $woof_container_styles = "";
-        // if ($woof_settings['tax_type'][$tax_slug] == 'radio' OR $woof_settings['tax_type'][$tax_slug] == 'checkbox') {
-        //     if ($WOOF->settings['tax_block_height'][$tax_slug] > 0) {
-        //         $woof_container_styles = "max-height:{$WOOF->settings['tax_block_height'][$tax_slug]}px; overflow-y: auto;";
-        //     }
-        // }
+        $woof_container_styles = "";
+        if ($woof_settings['tax_type'][$tax_slug] == 'radio' OR $woof_settings['tax_type'][$tax_slug] == 'checkbox') {
+            if ($WOOF->settings['tax_block_height'][$tax_slug] > 0) {
+                $woof_container_styles = "max-height:{$WOOF->settings['tax_block_height'][$tax_slug]}px; overflow-y: auto;";
+            }
+        }
         //***
         //https://wordpress.org/support/topic/adding-classes-woof_container-div
         $primax_class = sanitize_key(WOOF_HELPER::wpml_translate($taxonomies_info[$tax_slug]));
@@ -320,6 +316,7 @@ if (!function_exists('woof_print_tax')) {
 
             </div>
         </div>
+        
         <?php
     }
 
@@ -500,8 +497,7 @@ if (!function_exists('woof_print_item_by_key')) {
 
 
     <?php if ($autohide): ?>
-    
-
+    <div class="filter-section">
     <div style="position: relative;">
         <?php
         //***
@@ -510,12 +506,7 @@ if (!function_exists('woof_print_item_by_key')) {
             $woof_auto_hide_button_txt = WOOF_HELPER::wpml_translate(null, $this->settings['woof_auto_hide_button_txt']);
         }
         ?>
-        <div class="fillter-btn">
-        <a href="" class="woof_show_auto_form woof_btn_default <?php if (isset($this->settings['woof_auto_hide_button_img']) AND $this->settings['woof_auto_hide_button_img'] == 'none') echo 'woof_show_auto_form_txt'; ?>"><?php echo esc_html__($woof_auto_hide_button_txt) ?> Bộ lọc</a><br />
-        <div class="product_arrow_btn">
-
-        </div>
-        </div>
+        <a href="javascript:void(0);" class="woof_show_auto_form woof_btn_default <?php if (isset($this->settings['woof_auto_hide_button_img']) AND $this->settings['woof_auto_hide_button_img'] == 'none') echo 'woof_show_auto_form_txt'; ?>"><?php echo esc_html__($woof_auto_hide_button_txt) ?></a><br />
         <!-------------------- inline css for js anim ----------------------->
         <div class="woof_auto_show woof_overflow_hidden" style="opacity: 0; height: 1px;">
             <div class="woof_auto_show_indent woof_overflow_hidden">
@@ -551,6 +542,7 @@ if (!function_exists('woof_print_item_by_key')) {
                             <span><?php echo WOOF_HELPER::wpml_translate(null, $text_mb_open); ?></span>
     <?php endif; ?>
                     </div>
+                    
                     <div class="woof_hide_mobile_filter" >
                         <?php if ($image_mb_close != -1) : ?>
                             <img src="<?php echo $image_mb_close; ?>">
@@ -686,6 +678,7 @@ if (!function_exists('woof_print_item_by_key')) {
                             woof_show_btn($autosubmit, $ajax_redraw);
                         }
                         ?>
+                   
 
 <?php endif; ?>
 
@@ -695,11 +688,11 @@ if (!function_exists('woof_print_item_by_key')) {
 
             </div>
 
-
+          </div>
 
 <?php if ($autohide): ?>
             </div>
         </div>
-
     </div>
+
 <?php endif; ?>

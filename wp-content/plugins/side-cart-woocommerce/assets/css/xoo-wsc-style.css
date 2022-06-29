@@ -333,12 +333,19 @@ span.xoo-wsch-text {
 .xoo-wsc-qty-price {
     /* display: none; */
     display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
     justify-content: space-between;
+}
+
+.xoo-wsc-qty-price .detail-cart-product-price {
+    /* margin-left: 50%; */
 }
 
 .xoo-wsc-sm-right {
     align-items: flex-end;
     padding-left: 10px;
+    margin-right: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -353,6 +360,7 @@ span.xoo-wsc-pname a {
     font-size: 1vw;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
+    position: relative;
 }
 
 .detail-cart-product-price bdi {
@@ -989,4 +997,10 @@ span.xoo-wsc-ft-amt-label:after {
 
 span.xoo-wsc-ft-amt-label {
     padding-right: 5px;
+}
+
+@media only screen and (min-width: 1700px) {
+    .xoo-wsc-qty-price {
+        width: 83%;
+    }
 }

@@ -99,6 +99,7 @@ class Wcb_WooCommerce_Breadcrumbs_plugin{
 				echo '</p>';
 			echo '</form>';
 		echo '</div>';
+		
 
 	}
 

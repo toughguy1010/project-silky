@@ -95,7 +95,7 @@ final class WOOF {
         $this->storage = new WOOF_STORAGE($this->storage_type);
 
         //+++
-        
+
         if (!defined('DOING_AJAX')) {
             global $wp_query;
             if (isset($wp_query->query_vars['taxonomy']) AND in_array($wp_query->query_vars['taxonomy'], get_object_taxonomies('product'))) {
@@ -175,8 +175,7 @@ final class WOOF {
         add_action('wp_footer', array($this, 'wp_footer'), 999);
         //+++
         if (!isset($_REQUEST['legacy-widget-preview'])) {
-           
-            add_shortcode('woof', array($this, 'woof_shortcode'));           
+            add_shortcode('woof', array($this, 'woof_shortcode'));
             add_shortcode('woof_btn', array($this, 'show_btn'));
             add_shortcode('woof_mobile', array($this, 'show_mobile_btn'));
         }
@@ -2601,7 +2600,7 @@ final class WOOF {
                 //***
                 $form = trim(do_shortcode($shortcode_str));
             }
-
+     
 
             wp_die(json_encode(compact('products', 'form', 'additional_fields')));
         }
@@ -2623,8 +2622,7 @@ final class WOOF {
         }
 
         public function woof_shortcode($atts) {
-         
-            $args = array();            
+            $args = array();
             //this for synhronizating shortcode woof_products if its has attribute taxonomies
 
             if (isset($atts['taxonomies'])) {
@@ -3415,7 +3413,7 @@ final class WOOF {
             <?php
             return ob_get_clean();
         }
-
+    
         public function sort_terms_before_out($terms, $type) {
             if (!is_array($terms)) {
                 $terms = array();
@@ -3676,5 +3674,7 @@ final class WOOF {
     add_action('woocommerce_update_product', function ($prod_id, $product = null) {
         delete_transient('woof_min_max_prices');
     }, 10, 2);
+
+
 
     
