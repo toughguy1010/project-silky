@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product Loop Start
  *
@@ -19,8 +18,5 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-do_action('product_style');	
 ?>
-
-<ul class=" columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?> ">
-
+<ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">

@@ -20,5 +20,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 </ul>
-
-
