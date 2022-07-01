@@ -101,3 +101,8 @@ add_action('detail_product_style','get_detail_product_style');
 add_action('product_style','get_product_script');
 add_action('wp_head','get_header_script');
 add_action('blog-style','get_blog_script');
+require get_template_directory() . '/inc/ajax/zenzweb-ajax.php';
+// add_action('woocommerce_after_checkout_form', function() {
+add_action('woocommerce_checkout_before_order_review', function() {
+    get_template_part('global-templates/part','order-product-sumary');
+    }, 99);

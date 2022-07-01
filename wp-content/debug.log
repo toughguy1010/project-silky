@@ -554,3 +554,63 @@
                                                   ) DEFAULT CHARACTER SET utf8bin made by do_action('woocommerce_page_wc-settings'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Admin_Menus->settings_page, WC_Admin_Settings::output, include('/plugins/woocommerce/includes/admin/views/html-admin-settings.php'), do_action('woocommerce_settings_tabs_woof'), WP_Hook->do_action, WP_Hook->apply_filters, WOOF->print_plugin_options, WOOF->render_html, include('/plugins/woocommerce-products-filter/views/plugin_options.php')
 [29-Jun-2022 10:44:17 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
 [29-Jun-2022 10:44:17 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:20:29 UTC] WordPress database error Unknown character set: 'utf8bin' for query CREATE TABLE IF NOT EXISTS `wp_woof_query_cache` (
+                                                    `mkey` varchar(64) NOT NULL,
+                                                    `mvalue` text NOT NULL,
+                                                    KEY `mkey` (`mkey`)
+                                                  ) DEFAULT CHARACTER SET utf8bin made by do_action('woocommerce_page_wc-settings'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Admin_Menus->settings_page, WC_Admin_Settings::output, include('/plugins/woocommerce/includes/admin/views/html-admin-settings.php'), do_action('woocommerce_settings_tabs_woof'), WP_Hook->do_action, WP_Hook->apply_filters, WOOF->print_plugin_options, WOOF->render_html, include('/plugins/woocommerce-products-filter/views/plugin_options.php')
+[30-Jun-2022 13:20:36 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:20:36 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:26:43 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:26:43 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:26:49 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:26:49 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:27:21 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:27:21 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:28:07 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:28:07 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:56:52 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:56:52 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:57:12 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:57:12 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:57:54 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 13:57:54 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:15:42 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:15:42 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:15:49 UTC] WordPress database error Unknown character set: 'utf8bin' for query CREATE TABLE IF NOT EXISTS `wp_woof_query_cache` (
+                                                    `mkey` varchar(64) NOT NULL,
+                                                    `mvalue` text NOT NULL,
+                                                    KEY `mkey` (`mkey`)
+                                                  ) DEFAULT CHARACTER SET utf8bin made by do_action('woocommerce_page_wc-settings'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Admin_Menus->settings_page, WC_Admin_Settings::output, include('/plugins/woocommerce/includes/admin/views/html-admin-settings.php'), do_action('woocommerce_settings_tabs_woof'), WP_Hook->do_action, WP_Hook->apply_filters, WOOF->print_plugin_options, WOOF->render_html, include('/plugins/woocommerce-products-filter/views/plugin_options.php')
+[30-Jun-2022 14:15:50 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:15:50 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:15:52 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:15:52 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:17:06 UTC] WordPress database error Unknown character set: 'utf8bin' for query CREATE TABLE IF NOT EXISTS `wp_woof_query_cache` (
+                                                    `mkey` varchar(64) NOT NULL,
+                                                    `mvalue` text NOT NULL,
+                                                    KEY `mkey` (`mkey`)
+                                                  ) DEFAULT CHARACTER SET utf8bin made by do_action('woocommerce_page_wc-settings'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Admin_Menus->settings_page, WC_Admin_Settings::output, include('/plugins/woocommerce/includes/admin/views/html-admin-settings.php'), do_action('woocommerce_settings_tabs_woof'), WP_Hook->do_action, WP_Hook->apply_filters, WOOF->print_plugin_options, WOOF->render_html, include('/plugins/woocommerce-products-filter/views/plugin_options.php')
+[30-Jun-2022 14:17:10 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:17:10 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:18:00 UTC] WordPress database error Unknown character set: 'utf8bin' for query CREATE TABLE IF NOT EXISTS `wp_woof_query_cache` (
+                                                    `mkey` varchar(64) NOT NULL,
+                                                    `mvalue` text NOT NULL,
+                                                    KEY `mkey` (`mkey`)
+                                                  ) DEFAULT CHARACTER SET utf8bin made by do_action('woocommerce_page_wc-settings'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Admin_Menus->settings_page, WC_Admin_Settings::output, include('/plugins/woocommerce/includes/admin/views/html-admin-settings.php'), do_action('woocommerce_settings_tabs_woof'), WP_Hook->do_action, WP_Hook->apply_filters, WOOF->print_plugin_options, WOOF->render_html, include('/plugins/woocommerce-products-filter/views/plugin_options.php')
+[30-Jun-2022 14:18:04 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:18:04 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:18:30 UTC] WordPress database error Unknown character set: 'utf8bin' for query CREATE TABLE IF NOT EXISTS `wp_woof_query_cache` (
+                                                    `mkey` varchar(64) NOT NULL,
+                                                    `mvalue` text NOT NULL,
+                                                    KEY `mkey` (`mkey`)
+                                                  ) DEFAULT CHARACTER SET utf8bin made by do_action('woocommerce_page_wc-settings'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Admin_Menus->settings_page, WC_Admin_Settings::output, include('/plugins/woocommerce/includes/admin/views/html-admin-settings.php'), do_action('woocommerce_settings_tabs_woof'), WP_Hook->do_action, WP_Hook->apply_filters, WOOF->print_plugin_options, WOOF->render_html, include('/plugins/woocommerce-products-filter/views/plugin_options.php')
+[30-Jun-2022 14:18:34 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:18:34 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:19:34 UTC] WordPress database error Unknown character set: 'utf8bin' for query CREATE TABLE IF NOT EXISTS `wp_woof_query_cache` (
+                                                    `mkey` varchar(64) NOT NULL,
+                                                    `mvalue` text NOT NULL,
+                                                    KEY `mkey` (`mkey`)
+                                                  ) DEFAULT CHARACTER SET utf8bin made by do_action('woocommerce_page_wc-settings'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Admin_Menus->settings_page, WC_Admin_Settings::output, include('/plugins/woocommerce/includes/admin/views/html-admin-settings.php'), do_action('woocommerce_settings_tabs_woof'), WP_Hook->do_action, WP_Hook->apply_filters, WOOF->print_plugin_options, WOOF->render_html, include('/plugins/woocommerce-products-filter/views/plugin_options.php')
+[30-Jun-2022 14:19:38 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.
+[30-Jun-2022 14:19:38 UTC] The Automattic\WooCommerce\Admin\API\Options::get_options function is deprecated since version 3.1.

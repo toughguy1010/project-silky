@@ -561,11 +561,21 @@
 
 /* header css end */
 
+.woof_checkbox_term[type="checkbox"] {
+    background-color: #F5F1EC !important;
+    /* width: 200px; */
+}
+
+.woof_checkbox_term[type="checkbox"]:checked {
+    background-color: #1a1510 !important;
+}
+
 
 /* content css start */
 
 .wrapper-content {
     /* margin: 2% 3%; */
+    padding-right: 0 !important;
 }
 
 .shopnavbar {
@@ -712,6 +722,10 @@
 
 .tp-image {
     width: 100%;
+}
+
+.tp-image-wrapper .image {
+    width: 100% !important;
 }
 
 .menu-product-list li:hover .img-product-respon {
